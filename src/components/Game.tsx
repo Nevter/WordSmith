@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { madeUpWords } from '../data/words';
 import DefinitionAndEtymology from './DefinitionAndEtymology';
+import Keyboard from './Keyboard';
 
 const Game: React.FC = () => {
   const [gameState, setGameState] = useState<GameState>(() => {
@@ -23,6 +24,30 @@ const Game: React.FC = () => {
 
   const todaysWords = madeUpWords[gameState.currentDate] || [];
   const currentWord = todaysWords[gameState.currentWordIndex];
+  const [guessedLetters, setGuessedLetters] = useState<Set<string>>(new Set());
+
+  const handleBackspaceKeyPress = () => {
+    setGameState(prevState => ({
+      ...prevState,
+      currentGuess: prevState.currentGuess.slice(0, -1),
+    }));
+  }
+
+  const handleKeyInput = (key: string) => {
+    if (key === 'Enter') {
+      submitGuess();
+    } else if (key === 'Backspace') {
+      setGameState(prevState => ({
+        ...prevState,
+        currentGuess: prevState.currentGuess.slice(0, -1),
+      }));
+    } else if (key.match(/^[a-z]$/i)) {
+      setGameState(prevState => ({
+        ...prevState,
+        currentGuess: (prevState.currentGuess + key).slice(0, 5),
+      }));
+    }
+  };
 
   const submitGuess = () => {
     if (gameState.currentGuess.length !== 5) return;
@@ -64,6 +89,8 @@ const Game: React.FC = () => {
       gameStatus: newGameStatus,
       showEtymology: newGameStatus !== 'playing' || newGuesses.length >= 3,
     }));
+
+    setGuessedLetters(new Set([...guessedLetters, ...gameState.currentGuess.toLowerCase().split('')]));
   };
 
   useEffect(() => {
@@ -78,9 +105,10 @@ const Game: React.FC = () => {
           currentGuess: prevState.currentGuess.slice(0, -1),
         }));
       } else if (event.key.match(/^[a-z]$/i)) {
+        const letter = event.key.toLowerCase();
         setGameState(prevState => ({
           ...prevState,
-          currentGuess: (prevState.currentGuess + event.key).slice(0, 5),
+          currentGuess: (prevState.currentGuess + letter).slice(0, 5),
         }));
       }
     };
@@ -92,7 +120,18 @@ const Game: React.FC = () => {
     };
   }, [gameState, submitGuess]);
 
+  const filterLettersByWord = (letters: Set<string>, word: string): Set<string> => {
+    const lettersInWord = new Set<string>([...word].map(char => char.toLowerCase()));
+    return new Set([...letters].filter(letter => lettersInWord.has(letter)));
+  };
 
+  const findLettersNotInSet = (letters: Set<string>, word: string): Set<string> => {
+    const lettersInWord = new Set<string>([...word].map(char => char.toLowerCase()));
+
+    console.log('letters:', letters)
+
+    return new Set([...letters].filter(letter => !lettersInWord.has(letter)));
+  }
 
   const resetGame = () => {
     const today = new Date().toISOString().split('T')[0];
@@ -152,6 +191,15 @@ const Game: React.FC = () => {
             </React.Fragment>
           ))}
         </div>
+
+        <Keyboard
+          onKeyPress={handleKeyInput}
+          correctGuessedLetters={filterLettersByWord(guessedLetters, currentWord.word)}
+          incorrectGuessedLetters={findLettersNotInSet(guessedLetters, currentWord.word)}
+          onSubmitKeyPress={submitGuess}
+          onBackspaceKeyPress={handleBackspaceKeyPress}
+        />
+
         {gameState.gameStatus !== 'playing' && (
           <div className="text-center mb-4">
             <p className="text-xl font-bold mb-2">
