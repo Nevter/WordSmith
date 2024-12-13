@@ -24,32 +24,6 @@ const Game: React.FC = () => {
   const todaysWords = madeUpWords[gameState.currentDate] || [];
   const currentWord = todaysWords[gameState.currentWordIndex];
 
-  useEffect(() => {
-    const handleKeyDown = (event: KeyboardEvent) => {
-      if (gameState.gameStatus !== 'playing') return;
-
-      if (event.key === 'Enter') {
-        submitGuess();
-      } else if (event.key === 'Backspace') {
-        setGameState(prevState => ({
-          ...prevState,
-          currentGuess: prevState.currentGuess.slice(0, -1),
-        }));
-      } else if (event.key.match(/^[a-z]$/i)) {
-        setGameState(prevState => ({
-          ...prevState,
-          currentGuess: (prevState.currentGuess + event.key).slice(0, 5),
-        }));
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [gameState]);
-
   const submitGuess = () => {
     if (gameState.currentGuess.length !== 5) return;
 
@@ -92,6 +66,34 @@ const Game: React.FC = () => {
     }));
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (gameState.gameStatus !== 'playing') return;
+
+      if (event.key === 'Enter') {
+        submitGuess();
+      } else if (event.key === 'Backspace') {
+        setGameState(prevState => ({
+          ...prevState,
+          currentGuess: prevState.currentGuess.slice(0, -1),
+        }));
+      } else if (event.key.match(/^[a-z]$/i)) {
+        setGameState(prevState => ({
+          ...prevState,
+          currentGuess: (prevState.currentGuess + event.key).slice(0, 5),
+        }));
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [gameState, submitGuess]);
+
+
+
   const resetGame = () => {
     const today = new Date().toISOString().split('T')[0];
     const newPlaysToday = gameState.currentDate === today ? gameState.playsToday + 1 : 1;
@@ -109,16 +111,16 @@ const Game: React.FC = () => {
   };
 
   if (!currentWord) {
-    return <div>No word available for today.</div>;
+    return <div>{"No word available for today."}</div>;
   }
 
   return (
     <Card className="w-full max-w-lg mx-auto">
       <CardHeader className="text-secondary-foreground">
-        <CardTitle className="font-bold text-center text-3xl">WordSmith</CardTitle>
+        <CardTitle className="font-bold text-center text-3xl">{"WordSmith"}</CardTitle>
         <CardDescription className="flex flex-col text-center text-secondary-foreground/80">
-          <span>Guess the brand new word!</span>
-          <span>Word {gameState.currentWordIndex + 1} of 3 for {gameState.currentDate}</span>
+          <span>{"Guess the brand new word!"}</span>
+          <span>{`Word ${gameState.currentWordIndex + 1} of 3 for ${gameState.currentDate}`}</span>
         </CardDescription>
       </CardHeader>
       <CardContent className="mt-4 space-y-4 flex flex-col items-center">
@@ -155,11 +157,11 @@ const Game: React.FC = () => {
             <p className="text-xl font-bold mb-2">
               {gameState.gameStatus === 'won' ? 'Congratulations! You won!' : 'Game Over!'}
             </p>
-            <p>The word was: {currentWord.word}</p>
+            <p>{`The word was: ${currentWord.word}`}</p>
             {gameState.playsToday < 3 ? (
-              <Button onClick={resetGame} className="mt-2 bg-accent text-accent-foreground hover:bg-accent/90">Play Next Word</Button>
+              <Button onClick={resetGame} className="mt-2 bg-accent text-accent-foreground hover:bg-accent/90">{"Play Next Word"}</Button>
             ) : (
-              <p className="mt-2">You've played all 3 words for today. Come back tomorrow!</p>
+              <p className="mt-2">{"You've played all 3 words for today. Come back tomorrow!"}</p>
             )}
           </div>
         )}
