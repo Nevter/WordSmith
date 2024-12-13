@@ -41,7 +41,7 @@ const Keyboard: React.FC<KeyboardProps> = ({ onKeyPress, correctGuessedLetters, 
                 className={`mx-0.5 ${key === 'ENTER' || key === 'BACKSPACE' ? 'px-2 text-xs' : 'px-3'
                   } ${isCorrectGuessed ? 'bg-yellow-300 text-gray-800' : isIncorrectlyGuesed ? 'bg-gray-400 text-gray-600' : 'bg-gray-200 text-gray-800'
                   } hover:bg-gray-300`}
-                style={{ minWidth: key === 'ENTER' || key === 'BACKSPACE' ? '60px' : '30px' }}
+                style={{ minWidth: key === 'SUBMIT' || key === 'BACKSPACE' ? '60px' : '30px' }}
               >
                 {key === 'BACKSPACE' ? '←' : key}
               </Button>
