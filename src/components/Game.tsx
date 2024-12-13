@@ -147,6 +147,7 @@ const Game: React.FC = () => {
       showEtymology: false,
       playsToday: newPlaysToday,
     });
+    setGuessedLetters(new Set());
   };
 
   if (!currentWord) {
