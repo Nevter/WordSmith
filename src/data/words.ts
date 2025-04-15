@@ -1,16 +1,16 @@
 import { WordListType } from "@/types/types";
 
 export const madeUpWords: Record<string, WordListType> = {
-  "2024-12-13": [
+  "2025-04-15": [
     {
-      word: "frisp",
-      definition: "The tiny puff of air felt when flipping the pages of a book.",
-      etymology: "From Old French 'fris,' meaning 'light movement,' and Old English 'spowan,' meaning 'to blow.'"
+      "word": "frisp",
+      "definition": "The tiny puff of air felt when flipping the pages of a book.",
+      "etymology": "From Old French 'fris,' meaning 'light movement,' and Old English 'spowan,' meaning 'to blow.'"
     },
     {
-      word: "glarn",
-      definition: "The loud noise made when dragging a heavy chair across the floor.",
-      etymology: "Derived from Middle English 'glare,' meaning 'harsh,' and Old Norse 'arn,' meaning 'to scrape.'"
+      "word": "glarn",
+      "definition": "The loud noise made when dragging a heavy chair across the floor.",
+      "etymology": "Derived from Middle English 'glare,' meaning 'harsh,' and Old Norse 'arn,' meaning 'to scrape.'"
     }
   ],
   "2025-04-16": [
@@ -169,7 +169,7 @@ export const madeUpWords: Record<string, WordListType> = {
       "etymology": "From Scots 'glent' (a sudden glance) and Old Norse 'lent' (to lend, give for a moment)."
     }
   ],
-  "2025-04-15": [
+  "2025-04-29": [
     {
       "word": "flarn",
       "definition": "The fleeting sense of satisfaction from a small, meaningless task.",
