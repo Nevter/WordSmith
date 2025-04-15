@@ -143,7 +143,7 @@ const Game: React.FC = () => {
       guesses: [],
       currentDate: today,
       currentWordIndex: newWordIndex,
-      gameStatus: newPlaysToday <= 3 ? 'playing' : 'lost',
+      gameStatus: newPlaysToday <= 2 ? 'playing' : 'lost',
       showEtymology: false,
       playsToday: newPlaysToday,
     });
@@ -160,7 +160,7 @@ const Game: React.FC = () => {
         <CardTitle className="font-bold text-center text-3xl">{"WordSmith"}</CardTitle>
         <CardDescription className="flex flex-col text-center text-secondary-foreground/80">
           <span>{"Guess the brand new word!"}</span>
-          <span>{`Word ${gameState.currentWordIndex + 1} of 3 for ${gameState.currentDate}`}</span>
+          <span>{`Word ${gameState.currentWordIndex + 1} of 2 for ${gameState.currentDate}`}</span>
         </CardDescription>
       </CardHeader>
       <CardContent className="mt-4 space-y-4 flex flex-col items-center">
@@ -206,11 +206,11 @@ const Game: React.FC = () => {
             <p className="text-xl font-bold mb-2">
               {gameState.gameStatus === 'won' ? 'Congratulations! You won!' : 'Game Over!'}
             </p>
-            <p>{`The word was: ${currentWord.word}`}</p>
-            {gameState.playsToday < 3 ? (
+            <p>{gameState.gameStatus !== 'won' && `The word was: ${currentWord.word}`}</p>
+            {gameState.playsToday < 2 ? (
               <Button onClick={resetGame} className="mt-2 bg-accent text-accent-foreground hover:bg-accent/90">{"Play Next Word"}</Button>
             ) : (
-              <p className="mt-2">{"You've played all 3 words for today. Come back tomorrow!"}</p>
+              <p className="mt-2">{"You've played all 2 words for today. Come back tomorrow!"}</p>
             )}
           </div>
         )}

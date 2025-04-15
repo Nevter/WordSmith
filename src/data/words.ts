@@ -11,249 +11,174 @@ export const madeUpWords: Record<string, WordListType> = {
       word: "glarn",
       definition: "The loud noise made when dragging a heavy chair across the floor.",
       etymology: "Derived from Middle English 'glare,' meaning 'harsh,' and Old Norse 'arn,' meaning 'to scrape.'"
-    },
-    {
-      word: "plorp",
-      definition: "The sound of something soft dropping into water.",
-      etymology: "From Proto-Germanic 'plop,' meaning 'fall,' and Old Norse 'orp,' meaning 'splash.'"
     }
   ],
-  "2024-12-14": [
+  "2025-04-16": [
     {
-      word: "smiff",
-      definition: "The faint smell of something burning, like toast or a candle wick.",
-      etymology: "From Old English 'smigan,' meaning 'to creep,' and Middle English 'fef,' meaning 'odor.'"
+      "word": "blist",
+      "definition": "A fleeting idea or inspiration that feels profound but vanishes before it can be written down.",
+      "etymology": "From Middle English 'blissen' (to shine or glimmer) and Old High German 'list' (cunning, cleverness)."
     },
     {
-      word: "twazz",
-      definition: "The sharp, playful flick of a rubber band or similar object.",
-      etymology: "From Middle Low German 'twist,' meaning 'to pull,' and Old English 'bazz,' meaning 'to snap.'"
-    },
-    {
-      word: "grint",
-      definition: "The sensation of sand grinding between your teeth after a beach day.",
-      etymology: "Derived from Old Norse 'grind,' meaning 'to crush,' and Old English 'tint,' meaning 'grit.'"
+      "word": "grall",
+      "definition": "The soundless communication between two people who understand each other completely.",
+      "etymology": "From Old English 'grael' (grumble) and Latin 'locus' (place) implying an unspoken exchange in a shared space."
     }
   ],
-  "2024-12-15": [
+  "2025-04-17": [
     {
-      word: "flisk",
-      definition: "A quick, nervous motion, like a bird startled by a sound.",
-      etymology: "From Scots 'flicke,' meaning 'to dart,' and Old Norse 'sk,' indicating speed."
+      "word": "snarf",
+      "definition": "The uncontrollable burst of laughter caused by an awkward silence.",
+      "etymology": "Likely derived from Scandinavian 'snarr' (quick, sharp) and Middle English 'farfen' (to break)."
     },
     {
-      word: "trull",
-      definition: "The uneven wobble of a wheel on a rough surface.",
-      etymology: "From Old English 'trulian,' meaning 'to roll,' and Old High German 'rull,' meaning 'to wobble.'"
-    },
-    {
-      word: "spork",
-      definition: "The little spark that leaps from static electricity.",
-      etymology: "From Old English 'spere,' meaning 'spark,' and Proto-Germanic 'ork,' meaning 'force.'"
+      "word": "plune",
+      "definition": "The moment of indecision when standing at a crossroads, both literal and metaphorical.",
+      "etymology": "From Latin 'plumbum' (lead, weight) and Old Norse 'ne' (decision, choice)."
     }
   ],
-  "2024-12-16": [
+  "2025-04-18": [
     {
-      word: "clish",
-      definition: "The metallic sound of keys jingling in a pocket.",
-      etymology: "From Old Norse 'klífa,' meaning 'to clash,' and Scots 'swish,' indicating movement."
+      "word": "crint",
+      "definition": "A small but noticeable flaw in something otherwise perfect.",
+      "etymology": "From Old Irish 'críth' (a shaking or flaw) and Middle English 'tint' (color shade or blemish)."
     },
     {
-      word: "drimp",
-      definition: "The soft thud of a raindrop landing on a thick leaf.",
-      etymology: "Derived from Middle English 'drippe,' meaning 'to fall,' and Old Dutch 'wimp,' meaning 'soft sound.'"
-    },
-    {
-      word: "snurl",
-      definition: "The curled edge of paper after it has been wet and dried.",
-      etymology: "From Old English 'sneowan,' meaning 'to twist,' and Middle Low German 'lur,' meaning 'curve.'"
+      "word": "frold",
+      "definition": "The nostalgic scent that lingers in the air after rain on dry soil.",
+      "etymology": "Derived from Old Norse 'fróðr' (wise) and Old English 'hæld' (held, retained)."
     }
   ],
-  "2024-12-17": [
+  "2025-04-19": [
     {
-      word: "fruzz",
-      definition: "The soft, static-like sensation when running your fingers over a sweater.",
-      etymology: "From Middle English 'frus,' meaning 'to rub,' and Old High German 'zizzen,' meaning 'to hiss softly.'"
+      "word": "snerm",
+      "definition": "The awkward noise made when trying to suppress a sneeze in public.",
+      "etymology": "From Middle English 'sneren' (to sneer) and Proto-Germanic 'erm' (restrain)."
     },
     {
-      word: "blarf",
-      definition: "The clumsy, muffled sound of a bag of chips being opened.",
-      etymology: "Derived from Old Norse 'blárr,' meaning 'blow,' and Proto-Germanic 'farfan,' meaning 'to tear.'"
-    },
-    {
-      word: "trisp",
-      definition: "The fleeting chill you feel when stepping into a shaded area on a hot day.",
-      etymology: "From Old English 'tríe,' meaning 'tree,' and Proto-Slavic 'spiti,' meaning 'to rest.'"
+      "word": "gluft",
+      "definition": "The hollow, heavy feeling after finishing a long-awaited event.",
+      "etymology": "From Old High German 'gluofan' (to devour) and Middle English 'uft' (oft, frequent) suggesting repetitive longing."
     }
   ],
-  "2024-12-18": [
+  "2025-04-20": [
     {
-      word: "skrum",
-      definition: "The tangled mess of wires found behind a desk or TV.",
-      etymology: "From Old Norse 'skruma,' meaning 'to crowd,' and Old English 'rume,' meaning 'space.'"
+      "word": "brint",
+      "definition": "A sharp pang of regret felt immediately after making a bold decision.",
+      "etymology": "From Old English 'bryne' (burning sensation) and Middle Dutch 'int' (inner, internal)."
     },
     {
-      word: "plint",
-      definition: "The sharp noise of a small object striking a hard surface.",
-      etymology: "Derived from Middle Dutch 'plenten,' meaning 'to strike,' and Old High German 'hint,' meaning 'to hit.'"
-    },
-    {
-      word: "groft",
-      definition: "The rough, uneven texture of bark on an old tree.",
-      etymology: "From Old Norse 'grop,' meaning 'coarse,' and Proto-Germanic 'haft,' meaning 'hold.'"
+      "word": "clorp",
+      "definition": "The oddly satisfying but slightly annoying sound of wet shoes on tile.",
+      "etymology": "From Middle English 'clappen' (to slap or clap) and Old Norse 'orp' (throw, motion)."
     }
   ],
-  "2024-12-19": [
+  "2025-04-21": [
     {
-      word: "bliff",
-      definition: "The weak, sputtering flame of a nearly spent candle.",
-      etymology: "From Old English 'blawan,' meaning 'to blow,' and Middle English 'flif,' meaning 'flicker.'"
+      "word": "thriv",
+      "definition": "The quiet excitement that builds when anticipating a pleasant surprise.",
+      "etymology": "From Old Norse 'þrifa' (to grasp eagerly) and Old English 'hive' (a place of activity)."
     },
     {
-      word: "dront",
-      definition: "The awkward lurch of a vehicle when shifting gears poorly.",
-      etymology: "Derived from Middle Dutch 'dronken,' meaning 'slow,' and Old Norse 'tront,' meaning 'to stumble.'"
-    },
-    {
-      word: "snirp",
-      definition: "The high-pitched chirp of a small bird at dawn.",
-      etymology: "From Old Norse 'snirra,' meaning 'to twirl,' and Old English 'chirp,' meaning 'small sound.'"
+      "word": "plorf",
+      "definition": "The moment a liquid escapes from a container in an unpredictable splash.",
+      "etymology": "From Proto-Germanic 'plōran' (to splash) and Middle English 'forf' (off, away)."
     }
   ],
-  "2024-12-20": [
+  "2025-04-22": [
     {
-      word: "clomp",
-      definition: "The heavy, rhythmic sound of boots on a wooden floor.",
-      etymology: "From Middle Dutch 'klompen,' meaning 'wooden shoes,' and Old Norse 'homp,' meaning 'to pound.'"
+      "word": "framp",
+      "definition": "A restless energy that builds right before embarking on a new adventure.",
+      "etymology": "From Middle English 'frampe' (awkward, unruly) and Old Norse 'amp' (effort, exertion)."
     },
     {
-      word: "spind",
-      definition: "The fine layer of dust that settles on rarely used objects.",
-      etymology: "Derived from Old English 'spinnan,' meaning 'to spin,' and Old High German 'dunst,' meaning 'mist.'"
-    },
-    {
-      word: "twark",
-      definition: "The sharp, sudden sound of a rubber band snapping.",
-      etymology: "From Scots 'twist,' meaning 'to bend,' and Old English 'weorc,' meaning 'force or pain.'"
+      "word": "slurn",
+      "definition": "The muddy, unclear memory of a dream after waking up.",
+      "etymology": "From Old English 'slūpan' (to slip) and Middle High German 'urnen' (to stir or move)."
     }
   ],
-  "2024-12-21": [
+  "2025-04-23": [
     {
-      word: "brisp",
-      definition: "The sudden, refreshing chill of a breeze on a warm day.",
-      etymology: "From Old English 'bríes,' meaning 'breeze,' and Middle English 'spere,' meaning 'to touch lightly.'"
+      "word": "quemp",
+      "definition": "A fleeting moment of clarity during a confusing situation.",
+      "etymology": "Likely from Latin 'quem' (who, which) and Old English 'pempan' (to pounce or spring)."
     },
     {
-      word: "glunt",
-      definition: "The low, hollow sound of a full water bottle being set down.",
-      etymology: "Derived from Middle English 'glund,' meaning 'round,' and Old Norse 'und,' meaning 'resonance.'"
-    },
-    {
-      word: "flump",
-      definition: "The soft, weighty sound of someone sitting heavily on a couch.",
-      etymology: "From Old English 'fléow,' meaning 'to sink,' and Middle Dutch 'plompen,' meaning 'to fall heavily.'"
+      "word": "drilk",
+      "definition": "The sensation of cold air sneaking into clothing through a tiny gap.",
+      "etymology": "From Middle Dutch 'dril' (shiver) and Old Norse 'kald' (cold)."
     }
   ],
-  "2024-12-22": [
+  "2025-04-24": [
     {
-      word: "snurf",
-      definition: "The sound of a dog exhaling sharply through its nose.",
-      etymology: "From Old Norse 'snofra,' meaning 'to sniff,' and Middle English 'surfen,' meaning 'to blow.'"
+      "word": "brusk",
+      "definition": "A compliment delivered so bluntly that it feels like an insult.",
+      "etymology": "From Italian 'brusco' (sharp, rough) and Middle English 'busk' (prepare or set)."
     },
     {
-      word: "plisk",
-      definition: "The quick splash caused by skipping a stone on water.",
-      etymology: "From Middle English 'plask,' meaning 'splash,' and Old Norse 'skífa,' meaning 'disk.'"
-    },
-    {
-      word: "drank",
-      definition: "The metallic echo of a dropped coin rolling on a surface.",
-      etymology: "Derived from Old Norse 'draka,' meaning 'to drag,' and Middle Dutch 'klank,' meaning 'sound.'"
+      "word": "spult",
+      "definition": "The odd disorientation felt when waking in an unfamiliar place.",
+      "etymology": "From Old Norse 'spöl' (path, journey) and Middle English 'molt' (melt, change)."
     }
   ],
-  "2024-12-23": [
+  "2025-04-25": [
     {
-      word: "skirl",
-      definition: "The high-pitched sound of wind whistling through cracks.",
-      etymology: "From Scots 'skirl,' meaning 'to shriek,' and Old Norse 'skera,' meaning 'to cut.'"
+      "word": "grint",
+      "definition": "The unconscious clenching of the jaw when concentrating deeply.",
+      "etymology": "From Old English 'grindan' (to grind) and Old Norse 'tindr' (point, sharp peak)."
     },
     {
-      word: "trill",
-      definition: "A rapid, vibrating sound, like a phone on a wooden table.",
-      etymology: "From Old French 'triller,' meaning 'to quaver,' and Middle High German 'rillen,' meaning 'to resonate.'"
-    },
-    {
-      word: "grisp",
-      definition: "The faint crunch when walking on dry leaves.",
-      etymology: "From Old English 'gris,' meaning 'harsh,' and Proto-Germanic 'spen,' meaning 'to step.'"
+      "word": "flern",
+      "definition": "The act of flipping through pages without actually reading them.",
+      "etymology": "From Old Norse 'fljót' (fast) and Old English 'lern' (learn)."
     }
   ],
-  "2024-12-24": [
+  "2025-04-26": [
     {
-      word: "blorf",
-      definition: "The bubbling sound of thick soup cooking on a stove.",
-      etymology: "Derived from Middle English 'bloren,' meaning 'to boil,' and Old High German 'forfen,' meaning 'to froth.'"
+      "word": "snall",
+      "definition": "A sharp, unexpected noise that causes instant alertness.",
+      "etymology": "From Middle English 'snellen' (to sound sharply) and Old Norse 'gnall' (clang, resounding noise)."
     },
     {
-      word: "clent",
-      definition: "The tight feeling in your chest when climbing steep stairs.",
-      etymology: "From Old English 'clingan,' meaning 'to cling,' and Middle Dutch 'ent,' meaning 'to exert.'"
-    },
-    {
-      word: "spork",
-      definition: "The tiny spark seen when plugging in an electrical device.",
-      etymology: "From Old Norse 'spora,' meaning 'to spur,' and Middle English 'kork,' meaning 'spark.'"
+      "word": "plert",
+      "definition": "A half-formed thought or emotion you can't quite put into words.",
+      "etymology": "From Old English 'pleoh' (risk, danger) and Middle English 'erthe' (earth, substance)."
     }
   ],
-  "2024-12-25": [
+  "2025-04-27": [
     {
-      word: "drisk",
-      definition: "The fine mist that settles after a light rain.",
-      etymology: "From Old Norse 'driss,' meaning 'to drizzle,' and Old English 'scéadan,' meaning 'to scatter.'"
+      "word": "crulm",
+      "definition": "The cozy, closed-in feeling when wrapped in blankets on a cold morning.",
+      "etymology": "From Old High German 'krump' (crooked, curved) and Middle English 'helm' (covering, protection)."
     },
     {
-      word: "twift",
-      definition: "The rapid motion of a bird taking off from a branch.",
-      etymology: "Derived from Middle English 'twift,' meaning 'to dart,' and Old English 'ift,' meaning 'quickly.'"
-    },
-    {
-      word: "flarn",
-      definition: "The crispy edge of a pancake or fried food.",
-      etymology: "From Old High German 'flar,' meaning 'flat,' and Old English 'erne,' meaning 'burned.'"
+      "word": "drisp",
+      "definition": "The sound or sensation of light rain hitting windows at night.",
+      "etymology": "From Old English 'drēosan' (to fall) and Middle Low German 'spissen' (to sprinkle)."
     }
   ],
-  "2024-12-26": [
+  "2025-04-28": [
     {
-      word: "snork",
-      definition: "The short, snorting laugh that escapes unexpectedly.",
-      etymology: "From Old Norse 'snork,' meaning 'to snort,' and Middle Low German 'korken,' meaning 'to crack.'"
+      "word": "flurn",
+      "definition": "The subtle feeling of anticipation right before a big change.",
+      "etymology": "From Old Norse 'fljóta' (to float) and Middle English 'yeorn' (yearn)."
     },
     {
-      word: "glert",
-      definition: "The slippery texture of wet soap.",
-      etymology: "From Middle Dutch 'gleren,' meaning 'to slide,' and Old English 'hert,' meaning 'to hold.'"
-    },
-    {
-      word: "prisk",
-      definition: "The sting of cold air on exposed skin.",
-      etymology: "From Old Norse 'prísa,' meaning 'to pierce,' and Old English 'scéadan,' meaning 'to strike.'"
+      "word": "glent",
+      "definition": "A brief, unintended eye contact with a stranger that feels oddly significant.",
+      "etymology": "From Scots 'glent' (a sudden glance) and Old Norse 'lent' (to lend, give for a moment)."
     }
   ],
-  "2024-12-27": [
+  "2025-04-15": [
     {
-      word: "clorp",
-      definition: "The hollow sound of liquid sloshing in an almost-empty bottle.",
-      etymology: "Derived from Old English 'clod,' meaning 'lump,' and Middle High German 'porpen,' meaning 'to bubble.'"
+      "word": "flarn",
+      "definition": "The fleeting sense of satisfaction from a small, meaningless task.",
+      "etymology": "Derived from Old Norse 'flar' (flutter) and Middle English 'erne' (to yearn), suggesting a short-lived yearning fulfillment."
     },
     {
-      word: "blist",
-      definition: "The faint mark left on skin after removing a tight band.",
-      etymology: "From Old Norse 'blessa,' meaning 'to press,' and Old English 'twist,' meaning 'to twist.'"
-    },
-    {
-      word: "grusk",
-      definition: "The gritty residue left on hands after handling sand.",
-      etymology: "From Old Norse 'grus,' meaning 'gravel,' and Proto-Germanic 'skra,' meaning 'to scrape.'"
+      "word": "druve",
+      "definition": "The dull ache in muscles after waking from an unusually deep sleep.",
+      "etymology": "Possibly from Proto-Germanic 'drūfan' (to push, press) combined with Old English 'hēaf' (heaviness)."
     }
-  ]
+  ],
 }
